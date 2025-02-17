@@ -1,0 +1,90 @@
+body{
+    padding: 20px;
+}
+.header{
+    text-align: center;
+    background-color: rgb(255, 241, 184);
+    border: solid 2px rgba(0, 0, 0, 0.5);
+}
+.aside{
+    width: 200px;
+    padding: 20px;
+    border: solid 2px rgba(0, 0, 0, 0.5);
+}
+.top{
+    text-decoration: none;
+    color: blue;
+    pointer-events: visible;
+    margin-bottom: 10px;
+}
+.top:hover{
+    color: red;
+}
+.warning{
+    border: solid 1px black;
+    text-align: center;
+    font-size: 14px;
+    margin: 20px;
+    color: red;
+}
+.warning>p{
+    margin: 0;
+}
+.main{
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+}
+.title{
+    background-color: rgb(170, 170, 170);
+    display: flex;
+    border-bottom: solid 1px blue;
+    font-size: 24px;
+}
+.title::before{
+    content: "";
+    background-color: blue;
+    width: 20px;
+    height: 40px;
+    margin-top: -5px;
+}
+.index{
+    display: flex;
+    text-decoration: underline;
+}
+.index::before{
+    content: "";
+    width: 10px;
+    height: 20px;
+    background-color: aqua;
+    margin-top: -2.5px;
+}
+.noSpoiler{
+    text-decoration: underline;
+}
+.spoiler{
+    font-size: 18.72px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.spoiler:hover{
+    color: red;
+}
+.spoiler::marker{
+    content: none;
+}
+.movieList{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.movieList>a{
+    margin-bottom: 10px;
+}
+.summary{
+    font-size: 16px;
+    margin-bottom: 10px;
+}

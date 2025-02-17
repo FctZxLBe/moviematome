@@ -1,0 +1,50 @@
+body{
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    pointer-events: visible;
+}
+a:hover{
+    color: red;
+}
+.main{
+    margin: 20px;
+    display: flex;
+    gap: 40px;
+}
+.header{
+    text-align: center;
+    background-color: rgb(255, 241, 184);
+    border: solid 2px rgba(0, 0, 0, 0.5);
+}
+.aside{
+    width: 400px;
+    padding: 20px;
+    border: solid 2px rgba(0, 0, 0, 0.5);
+}
+.latest{
+    display: flex;
+    flex-direction: column;
+}
+.latest>a{
+    border-bottom: solid 2px rgba(0, 0, 0, 0.5);
+    width: calc(100vw - 440px);
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+.movieList{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.movieList>a{
+    margin-bottom: 10px;
+}
+.summary{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
