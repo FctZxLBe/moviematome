@@ -1,50 +1,108 @@
-body{
-    padding: 20px;
+/* pc */
+.sp {
+  display: none;
 }
-a{
-    text-decoration: none;
-    color: blue;
-    pointer-events: visible;
+body {
+  padding: 20px;
 }
-a:hover{
-    color: red;
+a {
+  text-decoration: none;
+  color: blue;
+  pointer-events: visible;
 }
-.main{
-    margin: 20px;
-    display: flex;
-    gap: 40px;
+a:hover {
+  color: red;
 }
-.header{
-    text-align: center;
-    background-color: rgb(255, 241, 184);
-    border: solid 2px rgba(0, 0, 0, 0.5);
+.main {
+  margin: 20px;
+  display: flex;
+  gap: 40px;
 }
-.aside{
-    width: 400px;
-    padding: 20px;
-    border: solid 2px rgba(0, 0, 0, 0.5);
+.header {
+  text-align: center;
+  background-color: rgb(255, 241, 184);
+  border: solid 2px rgba(0, 0, 0, 0.5);
 }
-.latest{
-    display: flex;
-    flex-direction: column;
+.aside {
+  width: 400px;
+  padding: 20px;
+  border: solid 2px rgba(0, 0, 0, 0.5);
 }
-.latest>a{
-    border-bottom: solid 2px rgba(0, 0, 0, 0.5);
-    width: calc(100vw - 440px);
-    margin-bottom: 40px;
-    font-size: 18px;
+.latest {
+  display: flex;
+  flex-direction: column;
 }
-.movieList{
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    margin-bottom: 10px;
+.latest > a {
+  border-bottom: solid 2px rgba(0, 0, 0, 0.5);
+  width: calc(100vw - 440px);
+  margin-bottom: 40px;
+  font-size: 18px;
 }
-.movieList>a{
-    margin-bottom: 10px;
+.movieList {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
-.summary{
-    font-size: 16px;
-    margin-bottom: 10px;
+.movieList > a {
+  margin-bottom: 10px;
+}
+.summary {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
+/* sp */
+@media screen and (width<1024px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+  .header > h1 {
+    font-size: 20px;
+  }
+  .latest {
+    height: 250px;
+    overflow: auto;
+  }
+  .latest > a {
+    padding: 5px 0;
+    width: auto;
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+  div {
+    margin-top: 20px;
+  }
+  div > h2 {
+    text-align: center;
+  }
+  .latestDiv {
+    padding: 20px;
+    height: 300px;
+    width: auto;
+    border: solid 1px black;
+  }
+  .latestDiv > h2 {
+    margin-top: 0;
+  }
+  .latest>a{
+    border-bottom: solid 1px black;
+    margin-bottom: 10px;
+  }
+  .main {
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    gap: 20px;
+  }
+  .aside{
+    width: auto;
+  }
+  .list{
+    height: 300px;
+    overflow: auto;
+  }
+}

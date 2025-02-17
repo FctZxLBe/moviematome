@@ -7,6 +7,7 @@ const array = [
     initial: "か",
     ruby: "キャプテンアメリカブレイブニューワールド",
   },
+
 //   {
 //     id: 2,
 //     url: "articles/CaptainAmericaTFA.html",
@@ -53,5 +54,24 @@ window.onload = function () {
     indexKList.setAttribute("href", indexKArray[0].url);
     indexK.appendChild(indexKList);
   }
+  const indexSpK = document.getElementById("spK");
+  if(indexSpK){
+    const indexSpKArray = array.filter((movie) => (movie.initial = "か"));
+    if(indexSpKArray.length!==1){
+      indexSpKArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
+      indexSpKArray.map((movie) => {
+        const indexSpKList = document.createElement("a");
+        indexSpKList.innerText = movie.name;
+        indexSpKList.setAttribute("href", movie.url);
+        indexSpK.appendChild(indexSpKList);
+      });
+    }else{
+      const indexSpKList = document.createElement("a");
+      indexSpKList.innerText = indexSpKArray[0].name
+      indexSpKList.setAttribute("href", indexSpKArray[0].url);
+      indexSpK.appendChild(indexSpKList);
+    }
+  }
+
 
 };

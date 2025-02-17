@@ -1,90 +1,135 @@
-body{
-    padding: 20px;
+/* pc */
+.sp {
+  display: none;
 }
-.header{
-    text-align: center;
-    background-color: rgb(255, 241, 184);
-    border: solid 2px rgba(0, 0, 0, 0.5);
+body {
+  padding: 20px;
 }
-.aside{
-    width: 200px;
-    padding: 20px;
-    border: solid 2px rgba(0, 0, 0, 0.5);
+.header {
+  text-align: center;
+  background-color: rgb(255, 241, 184);
+  border: solid 2px rgba(0, 0, 0, 0.5);
 }
-.top{
-    text-decoration: none;
-    color: blue;
-    pointer-events: visible;
-    margin-bottom: 10px;
+.aside {
+  width: 200px;
+  padding: 20px;
+  border: solid 2px rgba(0, 0, 0, 0.5);
 }
-.top:hover{
-    color: red;
+.top {
+  text-decoration: none;
+  color: blue;
+  pointer-events: visible;
+  margin-bottom: 10px;
 }
-.warning{
-    border: solid 1px black;
-    text-align: center;
-    font-size: 14px;
-    margin: 20px;
-    color: red;
+.top:hover {
+  color: red;
 }
-.warning>p{
-    margin: 0;
+.warning {
+  border: solid 1px black;
+  text-align: center;
+  font-size: 14px;
+  margin: 20px 0;
+  color: red;
 }
-.main{
-    margin: 20px;
+.warning > p {
+  margin: 0;
+}
+.main {
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+.title {
+  background-color: rgb(170, 170, 170);
+  display: flex;
+  border-bottom: solid 1px blue;
+  font-size: 24px;
+}
+.title::before {
+  content: "";
+  background-color: blue;
+  width: 20px;
+  height: 40px;
+  margin-top: -5px;
+}
+.index {
+  display: flex;
+  text-decoration: underline;
+}
+.index::before {
+  content: "";
+  width: 10px;
+  height: 20px;
+  background-color: aqua;
+  margin-top: -2.5px;
+}
+.noSpoiler {
+  text-decoration: underline;
+}
+.spoiler {
+  font-size: 18.72px;
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.spoiler:hover {
+  color: red;
+}
+.spoiler::marker {
+  content: none;
+}
+.movieList {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.movieList > a {
+  margin-bottom: 10px;
+}
+.summary {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+/* sp */
+@media screen and (width<1024px) {
+  .pc {
+    display: none;
+  }
+  .sp {
     display: flex;
-    gap: 20px;
-}
-.title{
-    background-color: rgb(170, 170, 170);
-    display: flex;
-    border-bottom: solid 1px blue;
-    font-size: 24px;
-}
-.title::before{
+  }
+  .header > h1 {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .title::before {
     content: "";
     background-color: blue;
     width: 20px;
     height: 40px;
     margin-top: -5px;
-}
-.index{
-    display: flex;
-    text-decoration: underline;
-}
-.index::before{
-    content: "";
-    width: 10px;
-    height: 20px;
-    background-color: aqua;
-    margin-top: -2.5px;
-}
-.noSpoiler{
-    text-decoration: underline;
-}
-.spoiler{
-    font-size: 18.72px;
-    font-weight: bold;
-    color: blue;
-    cursor: pointer;
-    text-decoration: underline;
-}
-.spoiler:hover{
-    color: red;
-}
-.spoiler::marker{
-    content: none;
-}
-.movieList{
-    display: flex;
-    flex-direction: column;
+  }
+  .article {
+    width: auto;
+  }
+  .sp-top {
+    justify-content: center;
     font-size: 12px;
-    margin-bottom: 10px;
-}
-.movieList>a{
-    margin-bottom: 10px;
-}
-.summary{
+  }
+  .main{
+    gap: 0;
+  }
+  .noSpoiler {
     font-size: 16px;
-    margin-bottom: 10px;
+  }
+  .spoiler {
+    font-size: 16px;
+  }
+  .article>p{
+    font-size: 14px;
+  }
 }
