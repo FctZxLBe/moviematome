@@ -15,6 +15,14 @@ const array = [
     initial: "さ",
     ruby: "スターウォーズエピソードワンファントムメナス",
   },
+
+  {
+    id: 3,
+    url: "https://fctzxlbe.github.io/moviematome/articles/FriendlyNeighborhoodSpiderman.html",
+    name: "スパイダーマン/フレンドリー・ネイバーフッド",
+    initial: "さ",
+    ruby: "スパイダーマンフレンドリー・ネイバーフッド",
+  },
 ];
 
 console.log(array);
