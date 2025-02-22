@@ -97,20 +97,23 @@ window.onload = function () {
     // ハ行
     const indexH = document.getElementById("H");
     const indexHArray = array.filter((movie) => movie.initial === "は");
-    if (indexHArray.length !== 1) {
-      indexHArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
-      indexHArray.map((movie) => {
+    if(indexH){
+      if (indexHArray.length !== 1) {
+        indexHArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
+        indexHArray.map((movie) => {
+          const indexHList = document.createElement("a");
+          indexHList.innerText = movie.name;
+          indexHList.setAttribute("href", movie.url);
+          indexH.appendChild(indexHList);
+        });
+      } else {
         const indexHList = document.createElement("a");
-        indexHList.innerText = movie.name;
-        indexHList.setAttribute("href", movie.url);
+        indexHList.innerText = indexHArray[0].name;
+        indexHList.setAttribute("href", indexHArray[0].url);
         indexH.appendChild(indexHList);
-      });
-    } else {
-      const indexHList = document.createElement("a");
-      indexHList.innerText = indexHArray[0].name;
-      indexHList.setAttribute("href", indexHArray[0].url);
-      indexH.appendChild(indexHList);
+      }
     }
+
 
     // sp
     // カ行
@@ -156,19 +159,22 @@ window.onload = function () {
     // ハ行
     const indexSpH = document.getElementById("spH");
     const indexSpHArray = array.filter((movie) => movie.initial === "は");
-    if (indexSpHArray.length !== 1) {
-      indexSpHArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
-      indexSpHArray.map((movie) => {
+    if(indexSpH){
+      if (indexSpHArray.length !== 1) {
+        indexSpHArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
+        indexSpHArray.map((movie) => {
+          const indexSpHList = document.createElement("a");
+          indexSpHList.innerText = movie.name;
+          indexSpHList.setAttribute("href", movie.url);
+          indexSpH.appendChild(indexSpHList);
+        });
+      } else {
         const indexSpHList = document.createElement("a");
-        indexSpHList.innerText = movie.name;
-        indexSpHList.setAttribute("href", movie.url);
+        indexSpHList.innerText = indexSpHArray[0].name;
+        indexSpHList.setAttribute("href", indexSpHArray[0].url);
         indexSpH.appendChild(indexSpHList);
-      });
-    } else {
-      const indexSpHList = document.createElement("a");
-      indexSpHList.innerText = indexSpHArray[0].name;
-      indexSpHList.setAttribute("href", indexSpHArray[0].url);
-      indexSpH.appendChild(indexSpHList);
+      }
     }
+
   }
 };
