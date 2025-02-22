@@ -2,26 +2,34 @@
 const array = [
   {
     id: 1,
-    url: "https://fctzxlbe.github.io/moviematome/articles/CaptainAmericaBNW.html",
-    name: "キャプテン・アメリカ/ブレイブ・ニュー・ワールド",
+    url: "https://fctzxlbe.github.io/moviematome/articles/CaptainAmericaBNW",
+    name: "キャプテン・アメリカ:ブレイブ・ニュー・ワールド",
     initial: "か",
     ruby: "キャプテンアメリカブレイブニューワールド",
   },
 
   {
     id: 2,
-    url: "https://fctzxlbe.github.io/moviematome/articles/PhantomMenace.html",
-    name: "スター・ウォーズ エピソード1/ファントム・メナス",
+    url: "https://fctzxlbe.github.io/moviematome/articles/PhantomMenace",
+    name: "スター・ウォーズ エピソード1:ファントム・メナス",
     initial: "さ",
     ruby: "スターウォーズエピソードワンファントムメナス",
   },
 
   {
     id: 3,
-    url: "https://fctzxlbe.github.io/moviematome/articles/FriendlyNeighborhoodSpiderman.html",
-    name: "スパイダーマン/フレンドリー・ネイバーフッド",
+    url: "https://fctzxlbe.github.io/moviematome/articles/FriendlyNeighborhoodSpiderman",
+    name: "スパイダーマン:フレンドリー・ネイバーフッド",
     initial: "さ",
     ruby: "スパイダーマンフレンドリー・ネイバーフッド",
+  },
+
+  {
+    id: 4,
+    url: "https://fctzxlbe.github.io/moviematome/articles/TheSilenceOfTheLambs",
+    name: "羊たちの沈黙",
+    initial: "は",
+    ruby: "ヒツジタチノチンモク",
   },
 ];
 
@@ -50,7 +58,7 @@ window.onload = function () {
   // カ行
   const indexK = document.getElementById("K");
   const indexKArray = array.filter((movie) => movie.initial === "か");
-  if(indexK){
+  if (indexK) {
     if (indexKArray.length !== 1) {
       indexKArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
       indexKArray.map((movie) => {
@@ -70,7 +78,7 @@ window.onload = function () {
   // サ行
   const indexS = document.getElementById("S");
   const indexSArray = array.filter((movie) => movie.initial === "さ");
-  if(indexS){
+  if (indexS) {
     if (indexSArray.length !== 1) {
       indexSArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
       indexSArray.map((movie) => {
@@ -84,13 +92,31 @@ window.onload = function () {
       indexSList.innerText = indexSArray[0].name;
       indexSList.setAttribute("href", indexSArray[0].url);
       indexS.appendChild(indexSList);
-  }
+    }
+
+    // ハ行
+    const indexH = document.getElementById("H");
+    const indexHArray = array.filter((movie) => movie.initial === "は");
+    if (indexHArray.length !== 1) {
+      indexHArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
+      indexHArray.map((movie) => {
+        const indexHList = document.createElement("a");
+        indexHList.innerText = movie.name;
+        indexHList.setAttribute("href", movie.url);
+        indexH.appendChild(indexHList);
+      });
+    } else {
+      const indexHList = document.createElement("a");
+      indexHList.innerText = indexHArray[0].name;
+      indexHList.setAttribute("href", indexHArray[0].url);
+      indexH.appendChild(indexHList);
+    }
 
     // sp
     // カ行
     const indexSpK = document.getElementById("spK");
     const indexSpKArray = array.filter((movie) => movie.initial === "か");
-    if(indexSpK){
+    if (indexSpK) {
       if (indexSpKArray.length !== 1) {
         indexSpKArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
         indexSpKArray.map((movie) => {
@@ -110,7 +136,7 @@ window.onload = function () {
     // サ行
     const indexSpS = document.getElementById("spS");
     const indexSpSArray = array.filter((movie) => movie.initial === "さ");
-    if(indexSpS){
+    if (indexSpS) {
       if (indexSpSArray.length !== 1) {
         indexSpSArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
         indexSpSArray.map((movie) => {
@@ -127,5 +153,22 @@ window.onload = function () {
       }
     }
 
+    // ハ行
+    const indexSpH = document.getElementById("spH");
+    const indexSpHArray = array.filter((movie) => movie.initial === "は");
+    if (indexSpHArray.length !== 1) {
+      indexSpHArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
+      indexSpHArray.map((movie) => {
+        const indexSpHList = document.createElement("a");
+        indexSpHList.innerText = movie.name;
+        indexSpHList.setAttribute("href", movie.url);
+        indexSpH.appendChild(indexSpHList);
+      });
+    } else {
+      const indexSpHList = document.createElement("a");
+      indexSpHList.innerText = indexSpHArray[0].name;
+      indexSpHList.setAttribute("href", indexSpHArray[0].url);
+      indexSpH.appendChild(indexSpHList);
+    }
   }
 };
