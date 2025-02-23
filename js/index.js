@@ -31,6 +31,14 @@ const array = [
     initial: "は",
     ruby: "ヒツジタチノチンモク",
   },
+
+  {
+    id: 5,
+    url: "https://fctzxlbe.github.io/moviematome/articles/AttackOfTheClones",
+    name: "スター・ウォーズ エピソード2:クローンの攻撃",
+    initial: "さ",
+    ruby: "スターウォーズエピソードツークローンノコウゲキ",
+  },
 ];
 
 console.log(array);
