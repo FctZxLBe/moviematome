@@ -187,7 +187,7 @@ window.onload = function () {
         }
       }
       // タ行
-      const indexSpT = document.getElementById("SpT");
+      const indexSpT = document.getElementById("spT");
       const indexSpTArray = array.filter((movie) => movie.initial === "た");
       if (indexSpT) {
         if (indexSpTArray.length !== 1) {
