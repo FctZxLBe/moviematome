@@ -42,9 +42,9 @@ const array = [
   {
     id: 6,
     url: "https://fctzxlbe.github.io/moviematome/articles/DareDevilBornAgain",
-    name: "デアデビル:ボーン・アゲイン",
+    name: "デアデビル:ボーン・アゲインS1",
     initial: "た",
-    ruby: "デアデビルボーンアゲイン",
+    ruby: "デアデビルボーンアゲインシーズンワン",
   },
 ];
 
