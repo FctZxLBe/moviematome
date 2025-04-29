@@ -1,135 +1,199 @@
-/* pc */
-.sp {
-  display: none;
-}
+/* 共通 */
 body {
   padding: 20px;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
 }
+
+/* ヘッダー */
 .header {
   text-align: center;
-  background-color: rgb(255, 241, 184);
-  border: solid 2px rgba(0, 0, 0, 0.5);
-}
-.aside {
-  width: 200px;
+  background-color: #2c3e50;
+  color: white;
   padding: 20px;
-  border: solid 2px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
 }
-.top {
-  text-decoration: none;
-  color: blue;
-  pointer-events: visible;
-  margin-bottom: 10px;
-}
-.top:hover {
-  color: red;
-}
+
+/* 警告エリア */
 .warning {
-  border: solid 1px black;
+  background-color: #fff3f3;
+  color: #e74c3c;
+  border: 1px solid #e0b4b4;
   text-align: center;
   font-size: 14px;
+  padding: 10px;
   margin: 20px 0;
-  color: red;
+  border-radius: 8px;
 }
 .warning > p {
   margin: 0;
 }
+
+/* メインレイアウト：旧式横並び */
 .main {
-  margin: 20px 0;
   display: flex;
+  margin: 20px 0;
   gap: 20px;
 }
-.title {
-  background-color: rgb(170, 170, 170);
-  display: flex;
-  border-bottom: solid 1px blue;
-  font-size: 24px;
+
+/* 記事 */
+.article {
+  width: 100%;
+  max-width: 700px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
-.title::before {
-  content: "";
-  background-color: blue;
-  width: 20px;
-  height: 40px;
-  margin-top: -5px;
+
+/* タイトル */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3498db;
+  color: #2c3e50;
+  padding-bottom: 5px;
+}
+
+
+
+/* 見出し */
+.noSpoiler {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+  text-decoration: underline;
 }
 .index {
-  display: flex;
-  text-decoration: underline;
-}
-.index::before {
-  content: "";
-  width: 10px;
-  height: 20px;
-  background-color: aqua;
-  margin-top: -2.5px;
-}
-.noSpoiler {
-  text-decoration: underline;
-}
-.spoiler {
-  font-size: 18.72px;
+  font-size: 16px;
   font-weight: bold;
-  color: blue;
+  border-left: 4px solid #3498db;
+  padding-left: 10px;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+
+
+/* 段落 */
+.article p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 10px 0;
+}
+
+/* ネタバレ summary */
+.spoiler {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3498db;
   cursor: pointer;
   text-decoration: underline;
+  margin-top: 20px;
 }
 .spoiler:hover {
-  color: red;
+  color: #1abc9c;
 }
 .spoiler::marker {
   content: none;
 }
+
+/* サイドバー（旧仕様） */
+.aside {
+  width: 200px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
 .movieList {
   display: flex;
   flex-direction: column;
   font-size: 12px;
   margin-bottom: 10px;
 }
-.movieList > a {
-  margin-bottom: 10px;
-}
 .summary {
   font-size: 16px;
   margin-bottom: 10px;
+  font-weight: bold;
+  color: #2c3e50;
 }
-/* sp */
-@media screen and (width<1024px) {
+.movieList > a {
+  margin-bottom: 10px;
+  color: #2980b9;
+}
+
+/* トップに戻るリンク */
+.top, .sp-top {
+  font-size: 14px;
+  color: #3498db;
+  margin: 10px 0;
+  display: inline-block;
+}
+.top:hover, .sp-top:hover {
+  color: #1abc9c;
+}
+
+/* SP対応 */
+@media screen and (max-width: 1024px) {
   .pc {
     display: none;
   }
   .sp {
     display: flex;
   }
-  .header > h1 {
-    font-size: 20px;
+  .main {
+    flex-direction: column;
+    gap: 0;
+  }
+  .article {
+    width: 100%;
+  }
+  .aside {
+    width: auto;
+    margin-top: 20px;
   }
   .title {
     font-size: 20px;
   }
-  .title::before {
-    content: "";
-    background-color: blue;
-    width: 20px;
-    height: 40px;
-    margin-top: -5px;
+  .noSpoiler, .spoiler {
+    font-size: 16px;
   }
-  .article {
-    width: auto;
+  .article p {
+    font-size: 14px;
   }
   .sp-top {
     justify-content: center;
     font-size: 12px;
   }
-  .main{
-    gap: 0;
+}
+
+
+/* 💡 全体に横スクロール防止と余白調整 */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* ✅ スマホ時のメインエリア調整 */
+@media screen and (max-width: 1024px) {
+  .main {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    overflow-x: hidden;
   }
-  .noSpoiler {
-    font-size: 16px;
-  }
-  .spoiler {
-    font-size: 16px;
-  }
-  .article p{
-    font-size: 14px;
+  .latestDiv, .article, .aside {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 }

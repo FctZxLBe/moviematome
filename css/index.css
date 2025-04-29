@@ -2,107 +2,158 @@
 .sp {
   display: none;
 }
+/* 全体 */
 body {
-  padding: 20px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
 }
-a {
-  text-decoration: none;
-  color: blue;
-  pointer-events: visible;
-}
-a:hover {
-  color: red;
-}
-.main {
-  margin: 20px;
-  display: flex;
-  gap: 40px;
-}
+
+/* ヘッダー */
 .header {
-  text-align: center;
-  background-color: rgb(255, 241, 184);
-  border: solid 2px rgba(0, 0, 0, 0.5);
-}
-.aside {
-  width: 400px;
+  background-color: #2c3e50;
+  color: white;
   padding: 20px;
-  border: solid 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.latest {
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* メイン */
+.main {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  flex-wrap: wrap;
 }
-.latest > a {
-  border-bottom: solid 2px rgba(0, 0, 0, 0.5);
-  width: calc(100vw - 440px);
-  margin-bottom: 40px;
+
+/* サイドバー */
+.aside {
+  width: 280px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.aside h2 {
   font-size: 18px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
+
 .movieList {
   display: flex;
   flex-direction: column;
   font-size: 12px;
   margin-bottom: 10px;
 }
-.movieList > a {
-  margin-bottom: 10px;
-}
 .summary {
   font-size: 16px;
-  margin-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+.movieList > a {
+  margin-left: 15px;
+  font-size: 14px;
+  color: #2980b9;
 }
 
-/* sp */
-@media screen and (width<1024px) {
+/* 新着 */
+.latestDiv {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.latestDiv h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.latest {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.latest > a {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #ecf0f1;
+  border-left: 4px solid #3498db;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.latest > a:hover {
+  background-color: #d0e6f7;
+}
+
+/* リンク */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+a:hover {
+  color: #1abc9c;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 1024px) {
   .pc {
     display: none;
   }
   .sp {
     display: block;
   }
-  .header > h1 {
-    font-size: 20px;
+  .main {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
   }
-  .latest {
-    height: 250px;
-    overflow: auto;
-  }
-  .latest > a {
-    padding: 5px 0;
-    width: auto;
-    margin-bottom: 40px;
-    font-size: 14px;
-  }
-  div {
-    margin-top: 20px;
-  }
-  div > h2 {
-    text-align: center;
+  .aside {
+    width: 100%;
   }
   .latestDiv {
-    padding: 20px;
-    height: 300px;
-    width: auto;
-    border: solid 1px black;
+    width: 100%;
   }
-  .latestDiv > h2 {
-    margin-top: 0;
-  }
-  .latest>a{
-    border-bottom: solid 1px black;
-    margin-bottom: 10px;
-  }
+}
+
+
+/* 💡 全体に横スクロール防止と余白調整 */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* ✅ スマホ時のメインエリア調整 */
+@media screen and (max-width: 1024px) {
   .main {
-    justify-content: center;
-    flex-direction: column;
-    margin: 0;
-    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    overflow-x: hidden;
   }
-  .aside{
-    width: auto;
-  }
-  .list{
-    height: 300px;
-    overflow: auto;
+  .latestDiv, .article, .aside {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 }
