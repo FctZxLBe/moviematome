@@ -46,6 +46,13 @@ const array = [
     initial: "た",
     ruby: "デアデビルボーンアゲインシーズンワン",
   },
+  {
+    id: 7,
+    url: "https://fctzxlbe.github.io/moviematome/articles/Thunderbolts",
+    name: "サンダーボルツ*",
+    initial: "さ",
+    ruby: "サンダーボルツ",
+  },
 ];
 
 console.log(array);
