@@ -60,6 +60,13 @@ const array = [
     initial: "あ",
     ruby: "ウィリーズワンダーランド",
   },
+  {
+    id: 8,
+    url: "https://fctzxlbe.github.io/moviematome/articles/Renfield",
+    name: "レンフィールド",
+    initial: "ら",
+    ruby: "レンフィールド",
+  },
 ];
 
 console.log(array);
@@ -179,6 +186,25 @@ window.onload = function () {
           indexH.appendChild(indexHList);
         }
       }
+      // ラ行
+      const indexR = document.getElementById("R");
+      const indexRArray = array.filter((movie) => movie.initial === "ら");
+      if (indexR) {
+        if (indexRArray.length !== 1) {
+          indexRArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
+          indexRArray.map((movie) => {
+            const indexRList = document.createElement("a");
+            indexRList.innerText = movie.name;
+            indexRList.setAttribute("href", movie.url);
+            indexR.appendChild(indexRList);
+          });
+        } else {
+          const indexRList = document.createElement("a");
+          indexRList.innerText = indexRArray[0].name;
+          indexRList.setAttribute("href", indexRArray[0].url);
+          indexR.appendChild(indexRList);
+        }
+      }
 
       // sp
       // ア行
@@ -276,6 +302,25 @@ window.onload = function () {
             indexSpHList.setAttribute("href", indexSpHArray[0].url);
             indexSpH.appendChild(indexSpHList);
           }
+        }
+      }
+      // ラ行
+      const indexSpR = document.getElementById("spR");
+      const indexSpRArray = array.filter((movie) => movie.initial === "ら");
+      if (indexSpR) {
+        if (indexSpRArray.length !== 1) {
+          indexSpRArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
+          indexSpRArray.map((movie) => {
+            const indexSpRList = document.createElement("a");
+            indexSpRList.innerText = movie.name;
+            indexSpRList.setAttribute("href", movie.url);
+            indexSpR.appendChild(indexSpRList);
+          });
+        } else {
+          const indexSpRList = document.createElement("a");
+          indexSpRList.innerText = indexSpRArray[0].name;
+          indexSpRList.setAttribute("href", indexSpRArray[0].url);
+          indexSpR.appendChild(indexSpRList);
         }
       }
     }
