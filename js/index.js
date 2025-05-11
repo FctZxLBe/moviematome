@@ -53,6 +53,13 @@ const array = [
     initial: "さ",
     ruby: "サンダーボルツ",
   },
+  {
+    id: 8,
+    url: "https://fctzxlbe.github.io/moviematome/articles/WillysWonderland",
+    name: "ウィリーズ・ワンダーランド",
+    initial: "あ",
+    ruby: "ウィリーズワンダーランド",
+  },
 ];
 
 console.log(array);
@@ -77,6 +84,26 @@ window.onload = function () {
   }
 
   // pc
+  // ア行
+  const indexA = document.getElementById("A");
+  const indexAArray = array.filter((movie) => movie.initial === "あ");
+  if (indexA) {
+    if (indexAArray.length !== 1) {
+      indexAArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
+      indexAArray.map((movie) => {
+        const indexAList = document.createElement("a");
+        indexAList.innerText = movie.name;
+        indexAList.setAttribute("href", movie.url);
+        indexA.appendChild(indexAList);
+      });
+    } else {
+      const indexAList = document.createElement("a");
+      indexAList.innerText = indexAArray[0].name;
+      indexAList.setAttribute("href", indexAArray[0].url);
+      indexA.appendChild(indexAList);
+    }
+  }
+
   // カ行
   const indexK = document.getElementById("K");
   const indexKArray = array.filter((movie) => movie.initial === "か");
@@ -154,6 +181,26 @@ window.onload = function () {
       }
 
       // sp
+      // ア行
+      const indexSpA = document.getElementById("spA");
+      const indexSpAArray = array.filter((movie) => movie.initial === "あ");
+      if (indexSpA) {
+        if (indexSpAArray.length !== 1) {
+          indexSpAArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
+          indexSpAArray.map((movie) => {
+            const indexSpAList = document.createElement("a");
+            indexSpAList.innerText = movie.name;
+            indexSpAList.setAttribute("href", movie.url);
+            indexSpA.appendChild(indexSpAList);
+          });
+        } else {
+          const indexSpAList = document.createElement("a");
+          indexSpAList.innerText = indexSpAArray[0].name;
+          indexSpAList.setAttribute("href", indexSpAArray[0].url);
+          indexSpA.appendChild(indexSpAList);
+        }
+      }
+
       // カ行
       const indexSpK = document.getElementById("spK");
       const indexSpKArray = array.filter((movie) => movie.initial === "か");
