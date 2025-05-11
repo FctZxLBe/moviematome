@@ -74,6 +74,13 @@ const array = [
     initial: "か",
     ruby: "キャスパー",
   },
+  {
+    id: 11,
+    url: "https://fctzxlbe.github.io/moviematome/articles/CloneWars",
+    name: "スター・ウォーズ:クローン・ウォーズ",
+    initial: "さ",
+    ruby: "スターウォーズクローンウォーズ",
+  },
 ];
 
 console.log(array);
