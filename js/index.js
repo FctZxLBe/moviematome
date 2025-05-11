@@ -67,6 +67,13 @@ const array = [
     initial: "ら",
     ruby: "レンフィールド",
   },
+  {
+    id: 10,
+    url: "https://fctzxlbe.github.io/moviematome/articles/Casper",
+    name: "キャスパー",
+    initial: "か",
+    ruby: "キャスパー",
+  },
 ];
 
 console.log(array);
