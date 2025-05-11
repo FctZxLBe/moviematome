@@ -61,7 +61,7 @@ const array = [
     ruby: "ウィリーズワンダーランド",
   },
   {
-    id: 8,
+    id: 9,
     url: "https://fctzxlbe.github.io/moviematome/articles/Renfield",
     name: "レンフィールド",
     initial: "ら",
