@@ -81,6 +81,13 @@ const array = [
     initial: "さ",
     ruby: "スターウォーズクローンウォーズ",
   },
+  {
+    id: 12,
+    url: "https://fctzxlbe.github.io/moviematome/articles/DeadReckoningPartOne",
+    name: "ミッション:インポッシブル/デッドレコニング PART ONE",
+    initial: "ま",
+    ruby: "ミッションインポッシブルデッドレコニングパートワン",
+  },
 ];
 
 console.log(array);
@@ -198,6 +205,25 @@ window.onload = function () {
           indexHList.innerText = indexHArray[0].name;
           indexHList.setAttribute("href", indexHArray[0].url);
           indexH.appendChild(indexHList);
+        }
+      }
+      // マ行
+      const indexM = document.getElementById("M");
+      const indexMArray = array.filter((movie) => movie.initial === "ま");
+      if (indexM) {
+        if (indexMArray.length !== 1) {
+          indexMArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
+          indexMArray.map((movie) => {
+            const indexMList = document.createElement("a");
+            indexMList.innerText = movie.name;
+            indexMList.setAttribute("href", movie.url);
+            indexM.appendChild(indexMList);
+          });
+        } else {
+          const indexMList = document.createElement("a");
+          indexMList.innerText = indexMArray[0].name;
+          indexMList.setAttribute("href", indexMArray[0].url);
+          indexM.appendChild(indexMList);
         }
       }
       // ラ行
@@ -318,24 +344,44 @@ window.onload = function () {
           }
         }
       }
-      // ラ行
-      const indexSpR = document.getElementById("spR");
-      const indexSpRArray = array.filter((movie) => movie.initial === "ら");
-      if (indexSpR) {
-        if (indexSpRArray.length !== 1) {
-          indexSpRArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
-          indexSpRArray.map((movie) => {
-            const indexSpRList = document.createElement("a");
-            indexSpRList.innerText = movie.name;
-            indexSpRList.setAttribute("href", movie.url);
-            indexSpR.appendChild(indexSpRList);
+      // マ行
+      const indexSpM = document.getElementById("spM");
+      const indexSpMArray = array.filter((movie) => movie.initial === "ま");
+      if (indexSpM) {
+        if (indexSpMArray.length !== 1) {
+          indexSpMArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
+          indexSpMArray.map((movie) => {
+            const indexSpMList = document.createElement("a");
+            indexSpMList.innerText = movie.name;
+            indexSpMList.setAttribute("href", movie.url);
+            indexSpM.appendChild(indexSpMList);
           });
         } else {
-          const indexSpRList = document.createElement("a");
-          indexSpRList.innerText = indexSpRArray[0].name;
-          indexSpRList.setAttribute("href", indexSpRArray[0].url);
-          indexSpR.appendChild(indexSpRList);
+          const indexSpMList = document.createElement("a");
+          indexSpMList.innerText = indexSpMArray[0].name;
+          indexSpMList.setAttribute("href", indexSpMArray[0].url);
+          indexSpM.appendChild(indexSpMList);
         }
+      }
+    }
+
+    // ラ行
+    const indexSpR = document.getElementById("spR");
+    const indexSpRArray = array.filter((movie) => movie.initial === "ら");
+    if (indexSpR) {
+      if (indexSpRArray.length !== 1) {
+        indexSpRArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
+        indexSpRArray.map((movie) => {
+          const indexSpRList = document.createElement("a");
+          indexSpRList.innerText = movie.name;
+          indexSpRList.setAttribute("href", movie.url);
+          indexSpR.appendChild(indexSpRList);
+        });
+      } else {
+        const indexSpRList = document.createElement("a");
+        indexSpRList.innerText = indexSpRArray[0].name;
+        indexSpRList.setAttribute("href", indexSpRArray[0].url);
+        indexSpR.appendChild(indexSpRList);
       }
     }
   }
