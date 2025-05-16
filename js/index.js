@@ -88,6 +88,13 @@ const array = [
     initial: "ま",
     ruby: "ミッションインポッシブルデッドレコニングパートワン",
   },
+  {
+    id: 13,
+    url: "https://fctzxlbe.github.io/moviematome/articles/ItPartOne",
+    name: "IT/イット “それ”が見えたら、終わり。",
+    initial: "あ",
+    ruby: "イットソレガミエタラオワリ",
+  },
 ];
 
 console.log(array);
