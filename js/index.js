@@ -95,6 +95,13 @@ const array = [
     initial: "あ",
     ruby: "イットソレガミエタラオワリ",
   },
+  {
+    id: 14,
+    url: "https://fctzxlbe.github.io/moviematome/articles/FianlReckoning",
+    name: "ミッション:インポッシブル/ファイナル・レコニング",
+    initial: "ま",
+    ruby: "ミッションインポッシブルファイナルレコニング",
+  },
 ];
 
 console.log(array);
