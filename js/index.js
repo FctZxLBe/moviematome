@@ -97,7 +97,7 @@ const array = [
   },
   {
     id: 14,
-    url: "https://fctzxlbe.github.io/moviematome/articles/FianlReckoning",
+    url: "https://fctzxlbe.github.io/moviematome/articles/FinalReckoning",
     name: "ミッション:インポッシブル/ファイナル・レコニング",
     initial: "ま",
     ruby: "ミッションインポッシブルファイナルレコニング",
