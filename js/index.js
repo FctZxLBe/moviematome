@@ -109,6 +109,13 @@ const array = [
     initial: "あ",
     ruby: "ウォンカトチョコレートコウジョウノハジマリ",
   },
+  {
+    id: 16,
+    url: "https://fctzxlbe.github.io/moviematome/articles/Megan",
+    name: "M3GAN ミーガン",
+    initial: "ま",
+    ruby: "ミーガン",
+  },
 ];
 
 console.log(array);
