@@ -102,6 +102,13 @@ const array = [
     initial: "ま",
     ruby: "ミッションインポッシブルファイナルレコニング",
   },
+  {
+    id: 15,
+    url: "https://fctzxlbe.github.io/moviematome/articles/Wonka",
+    name: "ウォンカとチョコレート工場のはじまり",
+    initial: "あ",
+    ruby: "ウォンカトチョコレートコウジョウノハジマリ",
+  },
 ];
 
 console.log(array);
@@ -259,6 +266,26 @@ window.onload = function () {
           indexR.appendChild(indexRList);
         }
       }
+      // ワ行
+      const indexW = document.getElementById("W");
+      const indexWArray = array.filter((movie) => movie.initial === "わ");
+      if (indexW) {
+        if (indexWArray.length !== 1) {
+          indexWArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
+          indexWArray.map((movie) => {
+            const indexWList = document.createElement("a");
+            indexWList.innerText = movie.name;
+            indexWList.setAttribute("href", movie.url);
+            indexW.appendChild(indexWList);
+          });
+        } else {
+          const indexWList = document.createElement("a");
+          indexWList.innerText = indexWArray[0].name;
+          indexWList.setAttribute("href", indexWArray[0].url);
+          indexW.appendChild(indexWList);
+        }
+      }
+
 
       // sp
       // ア行
@@ -398,5 +425,25 @@ window.onload = function () {
         indexSpR.appendChild(indexSpRList);
       }
     }
+    // ワ行
+    const indexSpW = document.getElementById("spW");
+    const indexSpWArray = array.filter((movie) => movie.initial === "わ");
+    if (indexSpW) {
+      if (indexSpWArray.length !== 1) {
+        indexSpWArray.sort((a, b) => a.ruby.localeCompare(b.ruby), "ja");
+        indexSpWArray.map((movie) => {
+          const indexSpWList = document.createElement("a");
+          indexSpWList.innerText = movie.name;
+          indexSpWList.setAttribute("href", movie.url);
+          indexSpW.appendChild(indexSpWList);
+        });
+      } else {
+        const indexSpWList = document.createElement("a");
+        indexSpWList.innerText = indexSpWArray[0].name;
+        indexSpWList.setAttribute("href", indexSpWArray[0].url);
+        indexSpW.appendChild(indexSpWList);
+      }
+    }
+
   }
 };
