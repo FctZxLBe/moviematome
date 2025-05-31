@@ -116,6 +116,13 @@ const array = [
     initial: "ま",
     ruby: "ミーガン",
   },
+  {
+    id: 17,
+    url: "https://fctzxlbe.github.io/moviematome/articles/Aristocats",
+    name: "おしゃれキャット",
+    initial: "あ",
+    ruby: "オシャレキャット",
+  },
 ];
 
 console.log(array);
