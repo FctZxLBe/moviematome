@@ -130,6 +130,13 @@ const array = [
     initial: "あ",
     ruby: "ウィッシュ",
   },
+  {
+    id: 19,
+    url: "https://fctzxlbe.github.io/moviematome/articles/LiloAndStitch",
+    name: "リロ＆スティッチ",
+    initial: "ら",
+    ruby: "リロアンドスティッチ",
+  },
 ];
 
 console.log(array);
