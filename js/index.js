@@ -123,6 +123,13 @@ const array = [
     initial: "あ",
     ruby: "オシャレキャット",
   },
+  {
+    id: 18,
+    url: "https://fctzxlbe.github.io/moviematome/articles/Wish",
+    name: "ウィッシュ",
+    initial: "あ",
+    ruby: "ウィッシュ",
+  },
 ];
 
 console.log(array);
