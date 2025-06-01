@@ -137,6 +137,13 @@ const array = [
     initial: "ら",
     ruby: "リロアンドスティッチ",
   },
+  {
+    id: 20,
+    url: "https://fctzxlbe.github.io/moviematome/articles/EverythingEverywhereAllAtOnce",
+    name: "エブリシング・エブリウェア・オール・アット・ワンス",
+    initial: "あ",
+    ruby: "エブリシングエブリウェアオールアットワンス",
+  },
 ];
 
 console.log(array);
