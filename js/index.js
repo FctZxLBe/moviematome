@@ -165,6 +165,13 @@ const array = [
     initial: "た",
     ruby: "タッカートデイルシジョウサイアクニツイテナイヤツラ",
   },
+  {
+    id: 24,
+    url: "https://fctzxlbe.github.io/moviematome/articles/Companion",
+    name: "コンパニオン",
+    initial: "か",
+    ruby: "コンパニオン",
+  },
 ];
 
 console.log(array);
