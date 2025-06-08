@@ -151,6 +151,13 @@ const array = [
     initial: "な",
     ruby: "ニンジャバットマン",
   },
+  {
+    id: 22,
+    url: "https://fctzxlbe.github.io/moviematome/articles/LiloAndStitchLiveAction",
+    name: "リロ＆スティッチ（実写）",
+    initial: "ら",
+    ruby: "リロアンドスティッチ",
+  },
 ];
 
 console.log(array);
