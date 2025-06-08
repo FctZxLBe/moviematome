@@ -158,6 +158,13 @@ const array = [
     initial: "ら",
     ruby: "リロアンドスティッチ",
   },
+  {
+    id: 23,
+    url: "https://fctzxlbe.github.io/moviematome/articles/TuckerAndDaleVSEvil",
+    name: "タッカーとデイル 史上最悪にツイてないヤツら",
+    initial: "た",
+    ruby: "タッカートデイルシジョウサイアクニツイテナイヤツラ",
+  },
 ];
 
 console.log(array);
