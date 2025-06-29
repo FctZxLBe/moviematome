@@ -177,7 +177,14 @@ const array = [
     url: "https://fctzxlbe.github.io/moviematome/articles/SnowWhiteLiveAction",
     name: "白雪姫（実写）",
     initial: "さ",
-    ruby: "白雪姫",
+    ruby: "シラユキヒメ",
+  },
+  {
+    id: 26,
+    url: "https://fctzxlbe.github.io/moviematome/articles/X",
+    name: "X エックス",
+    initial: "あ",
+    ruby: "エックス",
   },
 ];
 
