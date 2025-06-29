@@ -172,6 +172,13 @@ const array = [
     initial: "か",
     ruby: "コンパニオン",
   },
+  {
+    id: 25,
+    url: "https://fctzxlbe.github.io/moviematome/articles/SnowWhiteLiveAction",
+    name: "白雪姫（実写）",
+    initial: "さ",
+    ruby: "白雪姫",
+  },
 ];
 
 console.log(array);
