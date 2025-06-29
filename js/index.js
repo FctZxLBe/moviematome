@@ -186,6 +186,13 @@ const array = [
     initial: "あ",
     ruby: "エックス",
   },
+  {
+    id: 27,
+    url: "https://fctzxlbe.github.io/moviematome/articles/ThePhantomOfTheOpera",
+    name: "オペラ座の怪人（2004）",
+    initial: "あ",
+    ruby: "オペラザノカイジン",
+  },
 ];
 
 console.log(array);
