@@ -188,7 +188,7 @@ const array = [
   },
   {
     id: 27,
-    url: "https://fctzxlbe.github.io/moviematome/articles/ThePhantomOfTheOpera",
+    url: "https://fctzxlbe.github.io/moviematome/articles/ThePhantomOfTheOpera2004",
     name: "オペラ座の怪人（2004）",
     initial: "あ",
     ruby: "オペラザノカイジン",
