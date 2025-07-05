@@ -200,6 +200,13 @@ const array = [
     initial: "あ",
     ruby: "アイアンハート",
   },
+  {
+    id: 29,
+    url: "https://fctzxlbe.github.io/moviematome/articles/TheMatrix",
+    name: "マトリックス",
+    initial: "ま",
+    ruby: "マトリックス",
+  },
 ];
 
 console.log(array);
