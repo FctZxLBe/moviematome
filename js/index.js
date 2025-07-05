@@ -207,6 +207,13 @@ const array = [
     initial: "ま",
     ruby: "マトリックス",
   },
+  {
+    id: 30,
+    url: "https://fctzxlbe.github.io/moviematome/articles/SweeneyToddTheDemonBarberOfFleetStreet",
+    name: "スウィーニー・トッド フリート街の悪魔の理髪師",
+    initial: "さ",
+    ruby: "スウィーニートッドフリートガイノアクマノリハツシ",
+  },
 ];
 
 console.log(array);
