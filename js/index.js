@@ -193,6 +193,13 @@ const array = [
     initial: "あ",
     ruby: "オペラザノカイジン",
   },
+  {
+    id: 28,
+    url: "https://fctzxlbe.github.io/moviematome/articles/IronHeart",
+    name: "アイアンハート",
+    initial: "あ",
+    ruby: "アイアンハート",
+  },
 ];
 
 console.log(array);
