@@ -214,6 +214,13 @@ const array = [
     initial: "さ",
     ruby: "スウィーニートッドフリートガイノアクマノリハツシ",
   },
+  {
+    id: 31,
+    url: "https://fctzxlbe.github.io/moviematome/articles/TheSchoolForGoodAndEvil",
+    name: "スクール・フォー・グッド・アンド・イービル",
+    initial: "さ",
+    ruby: "スクールフォーグッドアンドイービル",
+  },
 ];
 
 console.log(array);
