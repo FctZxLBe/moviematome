@@ -230,10 +230,17 @@ const array = [
   },
   {
     id: 33,
-    url: "https://fctzxlbe.github.io/moviematome/articles/Pearl.html",
+    url: "https://fctzxlbe.github.io/moviematome/articles/Pearl",
     name: "Pearl パール",
     initial: "は",
     ruby: "パール",
+  },
+  {
+    id: 34,
+    url: "https://fctzxlbe.github.io/moviematome/articles/Superman2025",
+    name: "スーパーマン（2025）",
+    initial: "さ",
+    ruby: "スーパーマン",
   },
 ];
 
