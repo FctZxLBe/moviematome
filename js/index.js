@@ -228,6 +228,13 @@ const array = [
     initial: "あ",
     ruby: "エルムガイノアクム",
   },
+  {
+    id: 33,
+    url: "https://fctzxlbe.github.io/moviematome/articles/Pearl.html",
+    name: "Pearl パール",
+    initial: "は",
+    ruby: "パール",
+  },
 ];
 
 console.log(array);
