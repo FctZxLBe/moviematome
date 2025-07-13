@@ -221,6 +221,13 @@ const array = [
     initial: "さ",
     ruby: "スクールフォーグッドアンドイービル",
   },
+  {
+    id: 32,
+    url: "https://fctzxlbe.github.io/moviematome/articles/ANightmareOnElmStreet",
+    name: "エルム街の悪夢",
+    initial: "あ",
+    ruby: "エルムガイノアクム",
+  },
 ];
 
 console.log(array);
