@@ -256,6 +256,13 @@ const array = [
     initial: "あ",
     ruby: "アイズオブワカンダ",
   },
+  {
+    id: 37,
+    url: "https://fctzxlbe.github.io/moviematome/articles/BeetlejuiceBeetlejuice",
+    name: "ビートルジュース ビートルジュース",
+    initial: "は",
+    ruby: "ビートルジュースビートルジュース",
+  },
 ];
 
 console.log(array);
