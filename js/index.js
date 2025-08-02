@@ -242,6 +242,13 @@ const array = [
     initial: "さ",
     ruby: "スーパーマン",
   },
+  {
+    id: 35,
+    url: "https://fctzxlbe.github.io/moviematome/articles/TheFantasticFourFirstSteps",
+    name: "ファンタスティック4:ファースト・ステップ",
+    initial: "は",
+    ruby: "ファンタスティックフォーファーストステップ",
+  },
 ];
 
 console.log(array);
