@@ -249,6 +249,13 @@ const array = [
     initial: "は",
     ruby: "ファンタスティックフォーファーストステップ",
   },
+  {
+    id: 36,
+    url: "https://fctzxlbe.github.io/moviematome/articles/EyesOfWakanda",
+    name: "アイズ・オブ・ワカンダ",
+    initial: "あ",
+    ruby: "アイズオブワカンダ",
+  },
 ];
 
 console.log(array);
