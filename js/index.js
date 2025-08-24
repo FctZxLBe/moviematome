@@ -272,7 +272,7 @@ const array = [
   },
   {
     id: 39,
-    url: "https://fctzxlbe.github.io/moviematome/articles/TheTwoTower",
+    url: "https://fctzxlbe.github.io/moviematome/articles/TheTwoTowers",
     name: "ロード・オブ・ザ・リング/二つの塔",
     initial: "ら",
     ruby: "ロードオブザリングフタツノトウ",
