@@ -263,6 +263,13 @@ const array = [
     initial: "は",
     ruby: "ビートルジュースビートルジュース",
   },
+  {
+    id: 38,
+    url: "https://fctzxlbe.github.io/moviematome/articles/FellowshipOfTheRing",
+    name: "ロード・オブ・ザ・リング",
+    initial: "ら",
+    ruby: "ロードオブザリング",
+  },
 ];
 
 console.log(array);
