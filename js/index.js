@@ -298,6 +298,13 @@ const array = [
     initial: "さ",
     ruby: "ジュラシックワールドフッカツノダイチ",
   },
+  {
+    id: 43,
+    url: "https://fctzxlbe.github.io/moviematome/articles/Men",
+    name: "MEN 同じ顔の男たち",
+    initial: "ま",
+    ruby: "メンオナジカオノオトコタチ",
+  },
 ];
 
 console.log(array);
