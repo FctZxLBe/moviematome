@@ -291,6 +291,13 @@ const array = [
     initial: "ら",
     ruby: "ラストナイトインソーホー",
   },
+  {
+    id: 42,
+    url: "https://fctzxlbe.github.io/moviematome/articles/JurassicWorldRebirth",
+    name: "ジュラシック・ワールド/復活の大地",
+    initial: "さ",
+    ruby: "ジュラシックワールドフッカツノダイチ",
+  },
 ];
 
 console.log(array);
