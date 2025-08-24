@@ -277,6 +277,13 @@ const array = [
     initial: "ら",
     ruby: "ロードオブザリングフタツノトウ",
   },
+  {
+    id: 40,
+    url: "https://fctzxlbe.github.io/moviematome/articles/TheReturnOfTheKing",
+    name: "ロード・オブ・ザ・リング/王の帰還",
+    initial: "ら",
+    ruby: "ロードオブザリングオウノキカン",
+  },
 ];
 
 console.log(array);
