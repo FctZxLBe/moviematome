@@ -284,6 +284,13 @@ const array = [
     initial: "ら",
     ruby: "ロードオブザリングオウノキカン",
   },
+  {
+    id: 41,
+    url: "https://fctzxlbe.github.io/moviematome/articles/LastNightInSoho",
+    name: "ラストナイト・イン・ソーホー",
+    initial: "ら",
+    ruby: "ラストナイトインソーホー",
+  },
 ];
 
 console.log(array);
