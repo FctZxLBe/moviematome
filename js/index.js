@@ -312,6 +312,13 @@ const array = [
     initial: "な",
     ruby: "ニンジャバットマンタイヤクザリーグ",
   },
+  {
+    id: 45,
+    url: "https://fctzxlbe.github.io/moviematome/articles/Lamb",
+    name: "LAMB/ラム",
+    initial: "ら",
+    ruby: "ラム",
+  },
 ];
 
 console.log(array);
