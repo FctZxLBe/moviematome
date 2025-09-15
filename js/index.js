@@ -326,6 +326,13 @@ const array = [
     initial: "は",
     ruby: "ファイブナイツアットフレディーズ",
   },
+  {
+    id: 47,
+    url: "https://fctzxlbe.github.io/moviematome/articles/LoveLiesBleeding",
+    name: "愛はステロイド",
+    initial: "あ",
+    ruby: "アイハステロイド",
+  },
 ];
 
 console.log(array);
