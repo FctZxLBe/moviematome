@@ -319,6 +319,13 @@ const array = [
     initial: "ら",
     ruby: "ラム",
   },
+  {
+    id: 46,
+    url: "https://fctzxlbe.github.io/moviematome/articles/FiveNightsAtFreddys",
+    name: "ファイブ・ナイツ・アット・フレディーズ",
+    initial: "は",
+    ruby: "ファイブナイツアットフレディーズ",
+  },
 ];
 
 console.log(array);
