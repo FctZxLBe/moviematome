@@ -305,6 +305,13 @@ const array = [
     initial: "ま",
     ruby: "メンオナジカオノオトコタチ",
   },
+  {
+    id: 44,
+    url: "https://fctzxlbe.github.io/moviematome/articles/NinjaBatmanVSYakuzaLeague",
+    name: "ニンジャバットマン対ヤクザリーグ",
+    initial: "な",
+    ruby: "ニンジャバットマンタイヤクザリーグ",
+  },
 ];
 
 console.log(array);
