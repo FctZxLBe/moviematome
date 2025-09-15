@@ -333,6 +333,13 @@ const array = [
     initial: "あ",
     ruby: "アイハステロイド",
   },
+  {
+    id: 48,
+    url: "https://fctzxlbe.github.io/moviematome/articles/Maxxxine",
+    name: "MaXXXine マキシーン",
+    initial: "ま",
+    ruby: "マキシーン",
+  },
 ];
 
 console.log(array);
