@@ -340,6 +340,13 @@ const array = [
     initial: "ま",
     ruby: "マキシーン",
   },
+  {
+    id: 49,
+    url: "https://fctzxlbe.github.io/moviematome/articles/TomAndJerry2021",
+    name: "トムとジェリー（2021）",
+    initial: "た",
+    ruby: "トムトジェリー",
+  },
 ];
 
 console.log(array);
