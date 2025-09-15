@@ -347,6 +347,13 @@ const array = [
     initial: "た",
     ruby: "トムトジェリー",
   },
+  {
+    id: 50,
+    url: "https://fctzxlbe.github.io/moviematome/articles/JokerFolieADeux",
+    name: "ジョーカー:フォリ・ア・ドゥ",
+    initial: "さ",
+    ruby: "ジョーカーフォリアドゥ",
+  },
 ];
 
 console.log(array);
