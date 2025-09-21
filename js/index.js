@@ -354,6 +354,13 @@ const array = [
     initial: "さ",
     ruby: "ジョーカーフォリアドゥ",
   },
+  {
+    id: 51,
+    url: "https://fctzxlbe.github.io/moviematome/articles/MarsAttacks",
+    name: "マーズ・アタック!",
+    initial: "ま",
+    ruby: "マーズアタック",
+  },
 ];
 
 console.log(array);
