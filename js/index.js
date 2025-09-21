@@ -368,6 +368,13 @@ const array = [
     initial: "あ",
     ruby: "アトランティスウシナワレタテイコク",
   },
+  {
+    id: 53,
+    url: "https://fctzxlbe.github.io/moviematome/articles/Yesterday",
+    name: "イエスタデイ",
+    initial: "あ",
+    ruby: "イエスタデイ",
+  },
 ];
 
 console.log(array);
