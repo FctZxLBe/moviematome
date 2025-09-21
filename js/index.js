@@ -361,6 +361,13 @@ const array = [
     initial: "ま",
     ruby: "マーズアタック",
   },
+  {
+    id: 52,
+    url: "https://fctzxlbe.github.io/moviematome/articles/AtlantisTheLostEmpire",
+    name: "アトランティス 失われた帝国",
+    initial: "あ",
+    ruby: "アトランティスウシナワレタテイコク",
+  },
 ];
 
 console.log(array);
