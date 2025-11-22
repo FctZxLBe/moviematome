@@ -375,6 +375,13 @@ const array = [
     initial: "あ",
     ruby: "イエスタデイ",
   },
+  {
+    id: 54,
+    url: "https://fctzxlbe.github.io/moviematome/articles/PiratesOfTheCarribianTheCurseOfTheBlackPearl",
+    name: "パイレーツ・オブ・カリビアン/呪われた海賊たち",
+    initial: "は",
+    ruby: "パイレーツオブカリビアンノロワレタカイゾクタチ",
+  },
 ];
 
 console.log(array);
