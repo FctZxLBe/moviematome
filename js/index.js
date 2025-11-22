@@ -377,10 +377,17 @@ const array = [
   },
   {
     id: 54,
-    url: "https://fctzxlbe.github.io/moviematome/articles/PiratesOfTheCarribianTheCurseOfTheBlackPearl",
+    url: "https://fctzxlbe.github.io/moviematome/articles/PiratesOfTheCarribeanTheCurseOfTheBlackPearl",
     name: "パイレーツ・オブ・カリビアン/呪われた海賊たち",
     initial: "は",
     ruby: "パイレーツオブカリビアンノロワレタカイゾクタチ",
+  },
+  {
+    id: 55,
+    url: "https://fctzxlbe.github.io/moviematome/articles/PiratesOfTheCarribeanDeadMansChest",
+    name: "パイレーツ・オブ・カリビアン/デッドマンズ・チェスト",
+    initial: "は",
+    ruby: "パイレーツオブカリビアンデッドマンズチェスト",
   },
 ];
 
