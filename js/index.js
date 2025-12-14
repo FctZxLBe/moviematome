@@ -410,6 +410,13 @@ const array = [
     initial: "は",
     ruby: "パイレーツオブカリビアンサイゴノカイゾク",
   },
+  {
+    id: 59,
+    url: "https://moviematome.vercel.app/articles/Fantasia.html",
+    name: "ファンタジア",
+    initial: "は",
+    ruby: "ファンタジア",
+  },
 ];
 
 console.log(array);
