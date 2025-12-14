@@ -403,6 +403,13 @@ const array = [
     initial: "は",
     ruby: "パイレーツオブカリビアンイノチノイズミ",
   },
+  {
+    id: 58,
+    url: "https://moviematome.vercel.app/articles/PiratesOfTheCarribeanDeadMenTellNoTales.html",
+    name: "パイレーツ・オブ・カリビアン/最後の海賊",
+    initial: "は",
+    ruby: "パイレーツオブカリビアンサイゴノカイゾク",
+  },
 ];
 
 console.log(array);
