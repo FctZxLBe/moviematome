@@ -417,6 +417,13 @@ const array = [
     initial: "は",
     ruby: "ファンタジア",
   },
+  {
+    id: 60,
+    url: "https://moviematome.vercel.app/articles/Barbie.html",
+    name: "バービー",
+    initial: "は",
+    ruby: "バービー",
+  },
 ];
 
 console.log(array);
