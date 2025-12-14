@@ -396,6 +396,13 @@ const array = [
     initial: "は",
     ruby: "パイレーツオブカリビアンワールドエンド",
   },
+  {
+    id: 57,
+    url: "https://moviematome.vercel.app/articles/PiratesOfTheCarribeanOnStrangerTides.html",
+    name: "パイレーツ・オブ・カリビアン/生命の泉",
+    initial: "は",
+    ruby: "パイレーツオブカリビアンイノチノイズミ",
+  },
 ];
 
 console.log(array);
