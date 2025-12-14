@@ -389,6 +389,13 @@ const array = [
     initial: "は",
     ruby: "パイレーツオブカリビアンデッドマンズチェスト",
   },
+  {
+    id: 56,
+    url: "https://moviematome.vercel.app/articles/PiratesOfTheCarribeanAtWorldsEnd.html",
+    name: "パイレーツ・オブ・カリビアン/ワールド・エンド",
+    initial: "は",
+    ruby: "パイレーツオブカリビアンワールドエンド",
+  },
 ];
 
 console.log(array);
